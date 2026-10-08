@@ -1,0 +1,10 @@
+# Browser testing sessions, profiles, logs, and screenshots
+/output/
+
+# Generated installation archive (source files are tracked)
+/lowercase-extension.zip
+
+# Local editor and operating-system files
+/.vscode/
+.DS_Store
+Thumbs.db

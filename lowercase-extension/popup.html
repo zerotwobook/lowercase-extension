@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lowercase</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="badge" aria-hidden="true">Aa<span>↓</span></span>
+        <div>
+          <h1>Lowercase</h1>
+          <p class="subtitle">Make every word look right.</p>
+        </div>
+      </header>
+
+      <fieldset id="mode" class="mode-section" disabled>
+        <legend>Text style</legend>
+        <div class="mode-options">
+          <label class="mode-card">
+            <input id="mode-lower" type="radio" name="mode" value="lower" aria-label="lowercase" checked>
+            <span class="mode-card-content">
+              <span class="mode-card-title">lowercase<span class="choice-check" aria-hidden="true"></span></span>
+              <span class="mode-card-example" aria-hidden="true">hello world</span>
+            </span>
+          </label>
+          <label class="mode-card">
+            <input id="mode-title" type="radio" name="mode" value="title" aria-label="Title Case">
+            <span class="mode-card-content">
+              <span class="mode-card-title">Title Case<span class="choice-check" aria-hidden="true"></span></span>
+              <span class="mode-card-example" aria-hidden="true">Hello World</span>
+            </span>
+          </label>
+        </div>
+      </fieldset>
+
+      <section aria-labelledby="source-label">
+        <label id="source-label" for="source">Your text</label>
+        <textarea id="source" rows="4" placeholder="Paste or type here. HELLO World!" spellcheck="false" autocapitalize="off" autocomplete="off" disabled></textarea>
+      </section>
+
+      <section aria-labelledby="result-label">
+        <div class="result-heading">
+          <label id="result-label" for="result">Lowercase result</label>
+          <span class="tag" aria-hidden="true">LIVE</span>
+        </div>
+        <textarea id="result" rows="4" placeholder="hello world!" spellcheck="false" readonly></textarea>
+      </section>
+
+      <div class="actions">
+        <button id="copy" class="primary" type="button" disabled>Copy text</button>
+        <button id="clear" class="secondary" type="button" disabled>Clear</button>
+      </div>
+      <p id="action-status" class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+      <p id="storage-status" class="storage-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      <footer>Saved on this device <span aria-hidden="true">·</span> Works offline</footer>
+    </main>
+  </body>
+</html>

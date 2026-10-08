@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Lowercase",
+  "version": "1.2.1",
+  "description": "Instantly convert text to lowercase or Title Case, copy the result, and remember your text and style on this device.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Lowercase — Instant text converter",
+    "default_popup": "popup.html"
+  }
+}
